@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome!</title>
+</head>
+<body>
+  <h1>안녕하세요 👋</h1>
+  <p>여기는 제 기술 블로그입니다.</p>
+
+  <nav>
+    <ul>
+      <li><a href="/blog/">블로그 글 목록</a></li>
+    </ul>
+  </nav>
+</body>
+</html>
+"@
+
+Set-Content -Encoding UTF8 "blog.md" @"
+---
+layout: home
+title: 블로그
+permalink: /blog/
+---
+환영합니다! 최신 글은 아래 목록에서 확인하세요."
+"@
