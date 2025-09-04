@@ -1,27 +1,83 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Welcome!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>타이틀</title>
+    <link href = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color : rgb(209, 222, 241);
+            font-family : sans-serif;
+            font-size: 16px;
+        }
+        h1{
+            color:rgb(255, 255, 255);
+        }
+    </style>
 </head>
-<body>
-  <h1>안녕하세요 👋</h1>
-  <p>여기는 제 기술 블로그입니다.</p>
 
-  <nav>
-    <ul>
-      <li><a href="/blog/">블로그 글 목록</a></li>
-    </ul>
-  </nav>
+<body style = text-align:center;>
+    <!--  내용 -->
+    <h1 style = "text-align:center;"> <br> h1! </h1>
+        <!-- 헤드 순서 건너뛰면 논리적으로 불충분한 자료라고 Seo라고 여겨진다네요 -->
+    <h1 id = "title"> </h1>
+    <!-- 이거 어디에 들어가는 거?
+    #title {
+    color : tomato;
+    }-->
+
+    <p>paragraph 문단</p>
+    <div class = "container"> div : 그룹화? <br> container class는 또 뭐지..<br> </div>
+    
+    <div style="text-align:center;"><br>
+        <div class = "card" style = "width:18rem; margin:0 auto;">
+            <img src = "2025.07.23 13_53_57.png" class = "card-img-top" alt = "..." />
+            <!-- 이미지 주소 : 같은 폴더면 이미지 명만 -->
+            <div class ="card-body">
+                <h4 class = "card-title">윤지영</h4>
+                <h5 class = " card-text"> 반갑습니당 </h5>
+                <p class = " card-text"> 취미 : 구경하기 </p>
+                <p class = " card-text"> 
+                    두다다다다다다다<br>
+                    두다다다다다다다<br>
+                    　(∩`・ㅅ・)<br>
+                    ＿/_ミつ/￣￣￣/<br>
+                    　　＼/＿＿＿/<br>
+                    ꒰⁐⁐⁐⁐⁐⁐⁐⁐୨୧⁐⁐⁐⁐⁐⁐⁐⁐꒱
+                </p>
+
+                <a href = "https://github.com/youn-g-0" class = "btn btn-outline-dark" target="blank">  github</a>
+                <!-- target="blank" : 새탭에서 열기 -->
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <button class="btn btn-primary"> ! </button>
+   <!-- ??
+    @media (max-width:600px){
+        body {
+            background-color : lightyellow;
+        }
+    }
+    @keyframes fadeIn{
+        from { opacity : 0; }
+        to { opacity : 1; }
+    }
+    .container {
+        display : flex;
+        justify-content : center;
+        align-items : center;
+    }
+   --> 
 </body>
-</html>
-"@
 
-Set-Content -Encoding UTF8 "blog.md" @"
----
-layout: home
-title: 블로그
-permalink: /blog/
----
-환영합니다! 최신 글은 아래 목록에서 확인하세요."
-"@
+<script>
+    document.querySelector("button").addEventListener("click", function() {
+        alert("안녕하세요*^ㅅ^*");
+    });
+    
+</script>
+</html>

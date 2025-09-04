@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- ?? -->
+    <title>2주차</title>
+    <link 
+        href = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+        rel = "stylesheet"
+    />
+    <!-- 부트스트랩 CDN -->
+</head>
+
+<body class ="p-4">
+    <h1 class = "mb-4">나만의 게시판</h1>
+    <!-- h1 class = "mb-4" ? -->
+
+    <!-- 글 작성 폼 -->
+    <form id = "postForm" class = "mb-3">
+        <input
+            type="text"
+            id = "title"
+            placeholder = " *입력* "
+            class = "form-control mb-2"
+            required
+        />
+        <!-- intput 내에 주석 넣으니까 안 됨
+        -->
+        <textarea
+            id="content"
+            placeholder = "여러줄 입력"
+            class = "form-control mb-2"
+            required
+        ></textarea>
+        <!-- 얘는 왜 placeholder 안 보이지-->
+        <br>
+        <button type = "submit" class = "btn btn-primary">작성</button>
+        <!-- btn-primary 파란색 강조 버튼이라는데 ..? 
+        그리고 폼 제출이 가능하다는데 대체 어떻게 처리 되는지
+        -->
+    </form>
+
+    <!-- 글 목록 들어갈 공간 -->
+    <div id = "postList"> </div>
+    <!-- postlist : JS에서 선택해서 글 목록 넣어줄 영역
+      비어있다가 글 작성 시 카드 형태로 추가
+      JS로 만드는 이유 :
+        1. HTML에 미리 작성하면 매번 새로고침 해야 함
+        2. JS로 작성하면 새로고침 없이 (동적으로?)바로 추가 가능
+        3. JS로 작성하면 DB와 연동 가능 
+      자동완성 뜨는 것도 궁금-->
+
+     <!-- JS 파일 연결-->
+    <script src = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src = "app.js">
+            
+                //const postCard = document.createElement("div");
+                //postCard.className = "card mb-3";
+                //postCard.innerHTML = `
+                    //<div class="card-body">
+                        //<h5 class="card-title--> 
+    </script>
+</body>
+</html>
+
+
